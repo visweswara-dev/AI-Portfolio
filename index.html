@@ -3,49 +3,350 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prakash | Portfolio</title>
+
+    <meta name="description" content="Portfolio of Kenguva Visweswara Rao, aspiring software developer building responsive web applications using HTML, CSS and JavaScript.">
+
+    <meta name="author" content="Kenguva Visweswara Rao">
+
+    <meta name="theme-color" content="#0b1120">
+
+    <title>Kenguva Visweswara Rao | Aspiring Software Developer</title>
+
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
 
-    <header>
-        <h1>Hello, I'm Prakash!</h1>
-        <p>B.Tech Graduate | Aspiring Software Developer</p>
-        <button onclick="showMessage()">Say Hello</button>
-        <button onclick="toggleTheme()">Toggle Dark Mode</button>
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#home" class="logo">KVR<span>.</span></a>
 
-    <section>
-        <h2>About Me</h2>
-        <p>
-            I am an Electrical and Electronics Engineering graduate
-            interested in programming, web development and
-            AI-assisted software development.
-        </p>
-    </section>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
 
-    <section>
-        <h2>Technical Skills</h2>
-        <p>Python | HTML | CSS | SQL | Bootstrap</p>
-    </section>
+        <button id="theme-toggle" aria-label="Toggle dark mode">☀</button>
+    </nav>
 
-    <section>
-        <h2>My Projects</h2>
-        <p>Personal Portfolio Website</p>
-        <p>Electric Vehicle Battery Management System</p>
-        <p>Hybrid DC Microgrid</p>
-    </section>
+    <main>
 
-    <section>
-        <h2>Contact Me</h2>
-        <p>Email: yourmail@gmail.com</p>
-    </section>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
 
+            <div class="hero-content">
+
+                <p class="eyebrow">HELLO, WORLD! I'M</p>
+
+                <h1>
+                    Kenguva<br>
+                    <span>Visweswara Rao.</span>
+                </h1>
+
+                <h2>Aspiring Software Developer</h2>
+
+                <p class="hero-description">
+                    An Electrical and Electronics Engineering graduate
+                    passionate about building useful web applications,
+                    exploring programming and learning AI-powered development.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">
+                        Explore My Work ↗
+                    </a>
+
+                    <a href="#contact" class="btn secondary-btn">
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/visweswara-dev"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        GitHub ↗
+                    </a>
+
+                    <a href="mailto:visweswara76@gmail.com">
+                        Email ↗
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="visual-card">
+
+                    <div class="code-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <pre><code>const developer = {
+  name: "Visweswara Rao",
+  background: "Electrical Engineering",
+  interests: [
+    "Web Development",
+    "JavaScript",
+    "AI Technology"
+  ],
+  mindset: "Always Learning"
+};</code></pre>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+
+            <p class="section-label">GET TO KNOW ME</p>
+
+            <h2 class="section-title">
+                About Me<span>.</span>
+            </h2>
+
+            <div class="about-card">
+
+                <p>
+                    I am a B.Tech graduate in Electrical and Electronics
+                    Engineering with an interest in software development
+                    and modern web technologies.
+                </p>
+
+                <p>
+                    I am developing my programming skills through practical
+                    projects and hands-on learning. I enjoy solving problems,
+                    exploring new technologies and building applications
+                    that are useful and easy to use.
+                </p>
+
+                <p>
+                    My current focus is strengthening JavaScript, web
+                    development, Git, databases and AI-assisted coding.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+
+            <p class="section-label">WHAT I WORK WITH</p>
+
+            <h2 class="section-title">
+                Technical Skills<span>.</span>
+            </h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">HTML5</div>
+                <div class="skill-card">CSS3</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">Python</div>
+                <div class="skill-card">SQL</div>
+                <div class="skill-card">Bootstrap</div>
+                <div class="skill-card">Git & GitHub</div>
+                <div class="skill-card">MATLAB</div>
+
+            </div>
+
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+
+            <p class="section-label">MY RECENT WORK</p>
+
+            <h2 class="section-title">
+                Featured Projects<span>.</span>
+            </h2>
+
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card">
+
+                    <p class="project-number">
+                        01 / WEB APPLICATION
+                    </p>
+
+                    <h3>
+                        JobTrack – Job Application Tracker
+                    </h3>
+
+                    <p>
+                        A responsive web application that helps job seekers
+                        manage applications, track interview progress,
+                        update application statuses and monitor job search
+                        activity. Includes search, filtering and automatic
+                        browser storage.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Local Storage</span>
+                    </div>
+
+                    <a href="https://visweswara-dev.github.io/Job-Application-Tracker/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Live Demo ↗
+                    </a>
+
+                    <a href="https://github.com/visweswara-dev/Job-Application-Tracker"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Source Code ↗
+                    </a>
+
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+
+                    <p class="project-number">
+                        02 / WEB DEVELOPMENT
+                    </p>
+
+                    <h3>
+                        Personal Portfolio Website
+                    </h3>
+
+                    <p>
+                        A responsive personal website showcasing my
+                        educational background, technical skills and
+                        development projects, with interactive theme
+                        switching and scroll animations.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="https://visweswara-dev.github.io/AI-Portfolio/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Live Portfolio ↗
+                    </a>
+
+                    <a href="https://github.com/visweswara-dev/AI-Portfolio"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Source Code ↗
+                    </a>
+
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+
+                    <p class="project-number">
+                        03 / ELECTRICAL ENGINEERING
+                    </p>
+
+                    <h3>
+                        EV Battery Management System
+                    </h3>
+
+                    <p>
+                        An academic project focused on battery charge
+                        monitoring and temperature protection for
+                        electric vehicle battery systems.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Battery Monitoring</span>
+                        <span>Temperature Protection</span>
+                    </div>
+
+                    <span class="project-note">
+                        Academic Project
+                    </span>
+
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card">
+
+                    <p class="project-number">
+                        04 / ELECTRICAL ENGINEERING
+                    </p>
+
+                    <h3>
+                        Hybrid DC Microgrid
+                    </h3>
+
+                    <p>
+                        An academic project exploring solar, wind and
+                        energy storage integration with microcontroller-based
+                        monitoring and control.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Solar</span>
+                        <span>Wind</span>
+                        <span>Microcontroller</span>
+                    </div>
+
+                    <span class="project-note">
+                        Academic Project
+                    </span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+
+            <p class="section-label">LET'S CONNECT</p>
+
+            <h2 class="section-title">
+                Have a project in mind?<br>
+                <span>Let's talk.</span>
+            </h2>
+
+            <p>
+                I am interested in learning, collaborating and exploring
+                opportunities in software development.
+            </p>
+
+            <a href="mailto:visweswara76@gmail.com"
+               class="btn primary-btn">
+                visweswara76@gmail.com ↗
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2026 Prakash | Personal Portfolio</p>
+
+        <p>
+            © 2026 Kenguva Visweswara Rao.
+            Built with HTML, CSS & JavaScript.
+        </p>
+
+        <a href="#home">Back to top ↑</a>
+
     </footer>
+
     <script src="script.js"></script>
 
 </body>
